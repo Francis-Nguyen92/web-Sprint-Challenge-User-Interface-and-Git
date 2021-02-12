@@ -46,14 +46,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 * {
     box-sizing: border-box;
+    border: 1px solid black;
 }
 
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font:62.5%;
+    font-weight: 900;
 }
 
 h1, h2, h3, h4, h5 {
@@ -70,7 +72,29 @@ p {
     width: 800px;
     margin: 0 auto;
 }
+/* Header */
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    margin: 2% 0;
+}
+header nav a{
+    Color:black;
+    text-decoration: none;
+    font-size: .8rem; 
+    width:10%;
+    padding-top:3%;     
+}
 
+/* Background image */
+.bg-img{
+    background-image: url('../img/jumbo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20vh;
+}
+/* Top Content */
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -84,7 +108,7 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-
+/* Middle Content */
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
@@ -111,7 +135,38 @@ p {
     align-items: center;
     justify-content: center;
 }
+.middle-content .boxes .box1{
+    background: teal;
+}
+.middle-content .boxes .box2{
+    background: gold;
+}
+.middle-content .boxes .box3{
+    background: cadetblue;
+}
+.middle-content .boxes .box4{
+    background: coral;
+}
+.middle-content .boxes .box5{
+    background: crimson;
+}
+.middle-content .boxes .box6{
+    background: forestgreen;
+}
+.middle-content .boxes .box7{
+    background: darkorchid;
+}
+.middle-content .boxes .box8{
+    background: hotpink;
+}
+.middle-content .boxes .box9{
+    background: indigo;
+}
+.middle-content .boxes .box10{
+    background: dodgerblue;
+}
 
+/* Bottom Content */
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,7 +180,7 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
-
+/* Footer */
 footer {
     width: 100%;
     background: black;
